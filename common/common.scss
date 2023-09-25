@@ -20,7 +20,7 @@ body.static-login {
     background-color: #4c4c4c;
   }
 
-  .d-header, b-header {
+  .d-header, .b-header {
     display: none;
   }
 
@@ -55,11 +55,14 @@ body.static-login {
     }
   }
 
-  .login-subheader{
-    color: #fff;
-    .login-welcome-header & {
-      color: #4c4c4c;
+  .login-welcome-header {
+    .login-subheader {
+        color: #4c4c4c;
     }
+  }
+
+  .login-subheader {
+    color: #fff;
   }
 }
 
