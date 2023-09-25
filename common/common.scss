@@ -1,6 +1,7 @@
 body.static-login {
   background-size: cover;
   background-repeat: repeat;
+  background-position: top;
 
   @if $bg-image != "default" {
     background-image: url($bg-image);
@@ -15,12 +16,22 @@ body.static-login {
     background: linear-gradient(to right, $bg-gradient-1, $bg-gradient-2);
   }
 
+  .login-welcome {
+    background-color: #4c4c4c;
+  }
+
   .d-header {
     display: none;
   }
 
   h1 {
     text-align: center;
+    a {
+      color: #fff;
+      &:hover {
+        color: #d1d1d1;
+      }
+    }
   }
 
   .alert.alert-info {
@@ -42,6 +53,10 @@ body.static-login {
     .login-welcome__description {
       display: none;
     }
+  }
+
+  .login-subheader{
+    color: #fff;
   }
 }
 
